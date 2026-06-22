@@ -6,6 +6,7 @@ const PORT = 3000;
 
 // This lets Express understand JSON sent in request bodies
 app.use(express.json());
+app.use(express.static(__dirname));
 
 // Create the tasks table if it doesn't already exist
 db.exec(`
