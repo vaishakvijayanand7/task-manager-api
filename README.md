@@ -150,7 +150,7 @@ Expected response:
 ### Test 2 — No token (should fail ❌)
 
 ```
-Invoke-WebRequest -Uri http://localhost:3000/api/tasks -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"title": "Fix bug", "description": "Fix the login bug", "assignedUserId": 1}'
+Invoke-WebRequest -Uri http://localhost:3000/api/tasks -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"title": "Fix bug", "description": "Fix the login bug", "assignedUserId": 1}'  
 ```
 
 Expected response:
